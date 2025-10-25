@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "c4293fd9-cb66-4c12-9ef6-819b1b33b08b",
+		"name": "API Test Tugas 1- Vivian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49106157",
+		"_collection_link": "https://viviaan09-658373.postman.co/workspace/viviaan09's-Workspace~1bb95638-fa29-4752-887c-abb6399be688/collection/49106157-c4293fd9-cb66-4c12-9ef6-819b1b33b08b?action=share&source=collection_link&creator=49106157"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"vivian\",\r\n    \"email\" : \"ngvivian@gmail.com\",\r\n    \"password\" : \"667776677\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"vivian\",\r\n    \"email\" : \"ngvivian@gmail.com\",\r\n    \"password\" : \"667776677\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmlhbiIsImVtYWlsIjoibmd2aXZpYW5AZ21haWwuY29tIiwiaWF0IjoxNzYxMzc4OTExLCJleHAiOjE3NjEzODI1MTF9.oFCAgSNqE9N2_aOy3wMClNMRI_RwxTrup86OtIAdsgQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"pian\",\r\n    \"email\" : \"pianngn@gmail.com\",\r\n    \"message\" : \"fitur yang diberikan sudah lengkap\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmlhbiIsImVtYWlsIjoibmd2aXZpYW5AZ21haWwuY29tIiwiaWF0IjoxNzYxMzc4OTExLCJleHAiOjE3NjEzODI1MTF9.oFCAgSNqE9N2_aOy3wMClNMRI_RwxTrup86OtIAdsgQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmlhbiIsImVtYWlsIjoibmd2aXZpYW5AZ21haWwuY29tIiwiaWF0IjoxNzYxMzc4OTExLCJleHAiOjE3NjEzODI1MTF9.oFCAgSNqE9N2_aOy3wMClNMRI_RwxTrup86OtIAdsgQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"cocomelon\",\r\n    \"email\" : \"mufffyfly@gmail.com\",\r\n    \"message\" : \"fitur yang diberikan sudah lengkap\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmlhbiIsImVtYWlsIjoibmd2aXZpYW5AZ21haWwuY29tIiwiaWF0IjoxNzYxMzc4OTExLCJleHAiOjE3NjEzODI1MTF9.oFCAgSNqE9N2_aOy3wMClNMRI_RwxTrup86OtIAdsgQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/feedback/68fc84256a841ab812e49b0a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"feedback",
+						"68fc84256a841ab812e49b0a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
